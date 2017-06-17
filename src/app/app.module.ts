@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RecoverComponent } from "./otros/recover.component";
-import { RecoverRequestComponent } from "./otros/recover-request.component"
+import { RecoverRequestComponent } from "./otros/recover-request.component";
+import { SigninComponent } from "./otros/signin.component";
+import { SignupComponent } from "./otros/signup.component";
 
 import { AppRoutingModule } from './app-routing.module';
 import { SiteModule } from "./site/site.module";
@@ -12,7 +14,9 @@ import { SiteModule } from "./site/site.module";
   declarations: [
     AppComponent,
     RecoverComponent,
-    RecoverRequestComponent
+    RecoverRequestComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

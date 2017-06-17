@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'signin-root',
   templateUrl: './signin.component.html'
 })
-export class signinComponent {
+export class SigninComponent {
 
 }

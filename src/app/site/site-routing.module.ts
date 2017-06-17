@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { SiteComponent } from './site.component';
 import { SiteHomeComponent } from './components/site-home.component';
-
+import { CourseComponent } from "./components/course.component";
 import { HelpComponent } from './components/help.component';
 
 const siteRoutes: Routes = [
@@ -14,6 +14,14 @@ const siteRoutes: Routes = [
       {
         path: '',
         component: SiteHomeComponent
+      },
+      {
+        path: 'course',
+        component: CourseComponent
+      },
+      {
+        path: 'help',
+        component: HelpComponent
       }
     ]
   }
