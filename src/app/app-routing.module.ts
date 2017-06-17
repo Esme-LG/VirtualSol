@@ -2,7 +2,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { RecoverComponent } from "./otros/recover.component";
-import { RecoverRequestComponent } from "./otros/recover-request.component"
+import { RecoverRequestComponent } from "./otros/recover-request.component";
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/site', pathMatch: 'full'},

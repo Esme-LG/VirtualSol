@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="assets/css/test.css">
+
+<div class="container">
+
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-12">
+        <hr>
+        <h2 class="intro-text text-center">
+            <p>Tema que se esta evaluando</p>
+            <!-- navigation holder -->
+            <div class="holder"></div>
+        </h2>
+        <hr>
+        <div class="col-md-8 col-md-offset-3">
+          <!-- item container -->
+          <div id="itemContainer">
+
+            <div class="simple">
+              <p>PREGUNTA</p>
+              <div class="radio">
+                <label>
+                    <input type="radio" name="opciones" id="opciones_1" value="opcion_1">Respuesta A
+                </label><br>
+                <label>
+                    <input type="radio" name="opciones" id="opciones_2" value="opcion_2">Respuesta B
+                </label><br>
+              </div>
+            </div>
+
+            <div class="multiple">
+              <p>PREGUNTA</p>
+              <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">Pueder ser
+                </label><br>
+                <label>
+                    <input type="checkbox" value="">Esta tambien
+                </label><br>
+                <label>
+                    <input type="checkbox" value="">Esta no
+                </label><br>
+              </div>
+            </div>
+
+            <div class="link">
+              <p>PREGUNTA</p>
+              <div class="combo_box">
+                <label>
+                  Concepto 1:
+                  <select name="concepto1" id="">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                  </select>
+                </label><br>
+                <label>
+                  Concepto 2:
+                  <select name="concepto2" id="">
+                      <option value="a">A</option>
+                      <option value="b">B</option>
+                  </select>
+                </label><br>
+                <label>
+                  Concepto 3:
+                  <select name="concepto3" id="">
+                      <option value="a">A</option>
+                      <option value="b">B</option>
+                  </select>
+                </label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!-- /.container -->
+
+<script src="js/jPages.js"></script>
+<script>
+  /* when document is ready */
+  $(function() {
+
+    /* initiate the plugin */
+    $("div.holder").jPages({
+      containerID: "itemContainer",
+      perPage: 1,
+      startPage: 1,
+      startRange: 1,
+      midRange: 5,
+      endRange: 1
+    });
+
+  });
+</script>

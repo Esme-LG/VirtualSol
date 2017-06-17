@@ -2,7 +2,9 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { SiteComponent } from './site.component';
-import { SiteHomeComponent } from "./components/site-home.component";
+import { SiteHomeComponent } from './components/site-home.component';
+
+import { HelpComponent } from './components/help.component';
 
 const siteRoutes: Routes = [
   {
@@ -15,6 +17,7 @@ const siteRoutes: Routes = [
       }
     ]
   }
+
 ];
 
 @NgModule({
