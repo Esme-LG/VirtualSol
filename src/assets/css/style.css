@@ -34,6 +34,10 @@ hr {
     border-color: #999999;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 header{
     background-color: white;
     padding: 10px;
@@ -43,6 +47,19 @@ header{
 .brand,
 .address-bar {
     display: none;
+}
+
+header a.dropdown-toggle{
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+header ul.dropdown-menu{
+  cursor: default;
+}
+header ul.dropdown-menu li:hover{
+  color: green;
+  font-weight: bold;
 }
 
 nav.navbar.navbar-default{
@@ -135,6 +152,11 @@ footer p {
   margin-top: 20px;
 }
 
+tr.active> td >a{
+  pointer-events: none;
+  cursor: default;
+  color: gray;
+}
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;

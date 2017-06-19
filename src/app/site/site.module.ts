@@ -1,4 +1,6 @@
-import { NgModule }       from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpModule } from '@angular/http';
 
 import { SiteComponent }    from './site.component';
 import { SiteHomeComponent }  from './components/site-home.component';
@@ -11,9 +13,12 @@ import { OverviewComponent } from './components/overview.component';
 import { ResultComponent } from './components/result.component';
 
 import { SiteRoutingModule } from './site-routing.module';
+import { CourseService } from './components/course.service';
 
 @NgModule({
   imports: [
+    CommonModule,
+    HttpModule,
     SiteRoutingModule
   ],
   declarations: [
@@ -27,6 +32,8 @@ import { SiteRoutingModule } from './site-routing.module';
     OverviewComponent,
     ResultComponent
   ],
-  providers: [  ]
+  providers: [
+    CourseService
+  ]
 })
 export class SiteModule {}
