@@ -13,7 +13,7 @@ import { OverviewComponent } from './components/overview.component';
 import { ResultComponent } from './components/result.component';
 
 import { SiteRoutingModule } from './site-routing.module';
-import { CourseService } from './components/course.service';
+import { NewsService } from './../services/news.service';
 
 @NgModule({
   imports: [
@@ -33,7 +33,7 @@ import { CourseService } from './components/course.service';
     ResultComponent
   ],
   providers: [
-    CourseService
+    NewsService
   ]
 })
 export class SiteModule {}

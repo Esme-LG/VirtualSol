@@ -90,6 +90,9 @@ nav.navbar.navbar-default{
     min-width: 100%;
 }
 
+.img_news{
+  width: 300px;
+}
 .brand-before,
 .brand-name {
     text-transform: capitalize;
@@ -127,7 +130,7 @@ nav.navbar.navbar-default{
 .img-border {
     float: none;
     margin: 0 auto 0;
-    border: #999999 solid 1px;
+    width: 300px;
 }
 
 .img-left {

@@ -13,9 +13,7 @@
             </div>
           </div>
         </div>
-        <h2 class="brand-before">
-                        <small>Bienvenido a </small>
-                    </h2>
+        <h2 class="brand-before"><small>Bienvenido a </small></h2>
         <h1 class="brand-name">VirtualSol</h1>
         <hr class="tagline-divider">
         <h2>
@@ -29,11 +27,11 @@
 
   <div class="row">
     <div class="box">
-      <div class="col-lg-4 col-md-6  text-center">
-        <h2>Post Title</h2><br>
-        <img class="img-responsive img-border img-full" src="assets/images/" alt="">
-        <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-        <a routerLink="/site/news" class="btn btn-default btn-md">Leer</a>
+      <div class="col-lg-4 col-md-6 text-center" *ngFor="let noticia of noticias">
+        <h2>{{noticia.news_title}}</h2><br>
+        <img class="img-responsive img-border" src={{noticia.image_url}} alt="">
+        <p>{{noticia.news_content}}</p>
+        <a [routerLink]="[noticia.id]" class="btn btn-default btn-md">Leer</a>
         <hr>
       </div>
 

@@ -47,6 +47,10 @@ const siteRoutes: Routes = [
       {
         path: 'result',
         component: ResultComponent
+      },
+      {
+        path: ':id',
+        component: NewsComponent
       }
     ]
   }
