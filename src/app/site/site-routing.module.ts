@@ -34,7 +34,13 @@ const siteRoutes: Routes = [
       },
       {
         path: 'news',
-        component: NewsComponent
+        component: NewsComponent,
+        children: [
+          {
+            path: ':id',
+            component: NewsComponent
+          }
+        ]
       },
       {
         path: 'test',
@@ -47,10 +53,6 @@ const siteRoutes: Routes = [
       {
         path: 'result',
         component: ResultComponent
-      },
-      {
-        path: ':id',
-        component: NewsComponent
       }
     ]
   }

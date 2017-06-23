@@ -14,6 +14,7 @@ import { ResultComponent } from './components/result.component';
 
 import { SiteRoutingModule } from './site-routing.module';
 import { NewsService } from './../services/news.service';
+import { CourseService } from './../services/course.service';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { NewsService } from './../services/news.service';
     ResultComponent
   ],
   providers: [
-    NewsService
+    NewsService,
+    CourseService
   ]
 })
 export class SiteModule {}

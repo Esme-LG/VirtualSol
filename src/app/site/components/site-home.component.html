@@ -31,7 +31,7 @@
         <h2>{{noticia.news_title}}</h2><br>
         <img class="img-responsive img-border" src={{noticia.image_url}} alt="">
         <p>{{noticia.news_content}}</p>
-        <a [routerLink]="[noticia.id]" class="btn btn-default btn-md">Leer</a>
+        <a [routerLink]="['news/',noticia.id]" class="btn btn-default btn-md">Leer</a>
         <hr>
       </div>
 
