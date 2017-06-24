@@ -7,7 +7,7 @@
       <div class="col-lg-12">
         <hr>
         <h2 class="intro-text text-center">
-            <p>Tema que se esta evaluando</p>
+            <p>Examen</p>
             <!-- navigation holder -->
             <div class="holder"></div>
         </h2>
@@ -16,59 +16,68 @@
           <!-- item container -->
           <div id="itemContainer">
 
-            <div class="simple">
-              <p>PREGUNTA</p>
-              <div class="radio">
-                <label>
-                    <input type="radio" name="opciones" id="opciones_1" value="opcion_1">Respuesta A
-                </label><br>
-                <label>
-                    <input type="radio" name="opciones" id="opciones_2" value="opcion_2">Respuesta B
-                </label><br>
-              </div>
-            </div>
+<!--
+            <div *ngFor="let pregunta of evaluacion.testQuestions">
+              <p>{{pregunta.question}}</p>
+              <div [ngSwitch] = evaluacion.testQuestions.type>
+                <div *ngSwitchCase="simple" class="simple">
+                  <p>?</p>
+                  <div class="radio">
+                    <label *ngFor="let answer of evaluacion.simple.incorrect_answers">
+                      <input type="radio" name="opciones" id="opciones_1" value="opcion_1">Respuesta A
+                  </label><br>
+                    <label>
+                      <input type="radio" name="opciones" id="opciones_2" value="opcion_2">Respuesta B
+                  </label><br>
+                  </div>
+                </div>
 
-            <div class="multiple">
-              <p>PREGUNTA</p>
-              <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">Pueder ser
-                </label><br>
-                <label>
-                    <input type="checkbox" value="">Esta tambien
-                </label><br>
-                <label>
-                    <input type="checkbox" value="">Esta no
-                </label><br>
-              </div>
-            </div>
+                <div class="multiple">
+                  <p>PREGUNTA</p>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">Pueder ser
+                  </label><br>
+                    <label>
+                      <input type="checkbox" value="">Esta tambien
+                  </label><br>
+                    <label>
+                      <input type="checkbox" value="">Esta no
+                  </label><br>
+                  </div>
+                </div>
 
-            <div class="link">
-              <p>PREGUNTA</p>
-              <div class="combo_box">
-                <label>
-                  Concepto 1:
-                  <select name="concepto1" id="">
-                    <option value="a">A</option>
-                    <option value="b">B</option>
-                  </select>
-                </label><br>
-                <label>
-                  Concepto 2:
-                  <select name="concepto2" id="">
+                <div *ngFor="let link of evaluacion.link" class="link">
+                  <p>PREGUNTA</p>
+                  <div class="combo_box">
+                    <label>
+                    Concepto 1:
+                    <select name="concepto1" id="">
                       <option value="a">A</option>
                       <option value="b">B</option>
-                  </select>
-                </label><br>
-                <label>
-                  Concepto 3:
-                  <select name="concepto3" id="">
-                      <option value="a">A</option>
-                      <option value="b">B</option>
-                  </select>
-                </label><br>
+                    </select>
+                  </label><br>
+                    <label>
+                    Concepto 2:
+                    <select name="concepto2" id="">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                    </select>
+                  </label><br>
+                    <label>
+                    Concepto 3:
+                    <select name="concepto3" id="">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                    </select>
+                  </label><br>
+                  </div>
+                </div>
+
               </div>
+
             </div>
+-->
           </div>
 
         </div>
