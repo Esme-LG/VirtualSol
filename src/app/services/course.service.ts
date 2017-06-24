@@ -12,6 +12,8 @@ export class Modulo{
   module_level: string;
   module_active: boolean;
   module_objective: string;
+  evaluation: any;
+  study_material: any[];
 }
 
 export class Curso{
@@ -28,6 +30,12 @@ export class CourseService{
 
   getCurso(id: 1): Observable<Curso> {
     return this.http.get("https://pseesapicursos.herokuapp.com/courses/1?include=modules")
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  getModulo(id: 'id'):Observable<Modulo>{
+    return this.http.get("https://pseesapicursos.herokuapp.com/modules/"+id+"?include=materials")
       .map(this.extractData)
       .catch(this.handleError);
   }

@@ -21,19 +21,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="active disabled">
-                  <td><a href=""></a></td>
+                <tr *ngFor="let modulo of curso.course_module" [ngSwitch]="variable">
+                  <td class="active"><a routerLink="/site/modulo/{{modulo.id}}">{{modulo.module_name}}</a></td>
                 </tr>
-
-                <tr class="success">
-                  <td><a href="#">Completados</a></td>
-                </tr>
-                <tr>
-                  <td><a routerLink="/site/module">Actual</a></td>
-                </tr>
-                <tr class="active disabled">
-                  <td><a href="#">Deshabilitados</a></td>
-                </tr>
+                <!-- success, active disabled, any-->
               </tbody>
             </table>
           </div>

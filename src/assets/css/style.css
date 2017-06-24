@@ -160,6 +160,21 @@ tr.active> td >a{
   cursor: default;
   color: gray;
 }
+
+td.disabled a{
+  cursor: not-allowed;
+  color: gray;
+}
+
+.icono{
+  width: 24px;
+}
+ul.material{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 25%;
+}
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;

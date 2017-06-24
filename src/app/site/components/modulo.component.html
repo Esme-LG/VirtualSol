@@ -5,20 +5,20 @@
       <div class="col-lg-12">
         <hr>
         <h2 class="intro-text text-center">
-          <strong>Nombre del módulo</strong>
+          <strong>{{modulo.module_name}}</strong>
         </h2>
         <hr>
       </div>
 
       <div class="text-center">
         <p>
-          <strong>Objetivo del módulo: </strong> objetivo del módulo
+          <strong>Objetivo del módulo: </strong> {{modulo.module_objective}}
         </p>
 
         <ul class="material">
-          <li>
-            <img src="img/" alt="icono" />
-            <a href="" class="archivo">Nombre del archivo</a>
+          <li *ngFor="let material of modulo.study_material">
+            <img src="https:{{material.material_type.image_url}}" alt="icono" class="icono"/>
+            <a href="https:{{material.material_file_url}}" class="archivo">{{material.material_file_name}}</a>
           </li>
         </ul>
 

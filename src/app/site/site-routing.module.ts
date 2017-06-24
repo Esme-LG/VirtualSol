@@ -29,21 +29,15 @@ const siteRoutes: Routes = [
         component: HelpComponent
       },
       {
-        path: 'module',
+        path: 'modulo/:id',
         component: ModuloComponent
       },
       {
-        path: 'news',
-        component: NewsComponent,
-        children: [
-          {
-            path: ':id',
-            component: NewsComponent
-          }
-        ]
+        path: 'news/:id',
+        component: NewsComponent
       },
       {
-        path: 'test',
+        path: 'test/:id',
         component: TestComponent
       },
       {
